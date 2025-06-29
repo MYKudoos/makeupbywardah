@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+is everything fine here... <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -16,8 +16,7 @@
     rel="stylesheet"
   />
   <style>
-    /* (Same CSS as before — unchanged except below) */
-
+    /* (Same CSS as before — unchanged) */
     /* ===== Global Styles ===== */
     :root {
       --primary: #a2836e;
@@ -130,17 +129,14 @@
 
     /* Hamburger menu */
     .hamburger {
-  display: none;
-  flex-direction: column;
-  cursor: pointer;
-  width: 25px;
-  height: 20px;
-  justify-content: space-between;
-  align-self: flex-end;
-  margin-left: auto;
-  z-index: 1100;
-}
-
+      display: none;
+      flex-direction: column;
+      cursor: pointer;
+      width: 25px;
+      height: 20px;
+      justify-content: space-between;
+      z-index: 1100;
+    }
     .hamburger span {
       height: 3px;
       background: white;
@@ -331,14 +327,14 @@
       border-radius: 10px;
       overflow: hidden;
     }
-    .about-img img {
-      width: 50%;
-      height: auto;
-      object-fit: cover;
-      display: block;
-      margin: 0 auto;
-      border-radius: 10px;
-    }
+.about-img img {
+  width: 50%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto;
+  border-radius: 10px;
+}
 
     /* ===== Contact ===== */
     .contact {
@@ -426,15 +422,15 @@
       /* Show hamburger on mobile */
       .hamburger {
         display: flex;
-        margin-left: auto; /* <-- ADDED: this pushes hamburger to the right */
       }
       /* Hide normal nav on mobile */
       nav ul:not(.mobile-menu) {
         display: none;
       }
-      html {
-        scroll-behavior: smooth;
-      }
+	  html {
+  scroll-behavior: smooth;
+}
+
     }
   </style>
 </head>
@@ -567,22 +563,29 @@
       </div>
       <div class="testimonial-grid">
         <div class="testimonial-card">
-          <p>"Wardah made my wedding day so special and stress-free. I felt so beautiful and confident!"</p>
+          <p>"Wardah made my wedding day so special and stress-free. I felt like a queen!"</p>
           <div class="client-info">
-            <img src="client1.jpg" alt="Client 1" />
             <div>
-              <strong>Sarah</strong><br />
-              Johannesburg
+              <h4>Sarah L.</h4>
+              <p>Bride</p>
             </div>
           </div>
         </div>
         <div class="testimonial-card">
-          <p>"Best makeup artist I've ever worked with. Truly professional and talented."</p>
-          <div class="client-info">
-            <img src="client2.jpg" alt="Client 2" />
+          <p>"I get so many compliments whenever Wardah does my makeup. She enhances my natural features perfectly."</p>
+          <div class="client-info">        
             <div>
-              <strong>Amina</strong><br />
-              Cape Town
+              <h4>Aisha M.</h4>
+              <p>Regular Client</p>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <p>"The trial session was so helpful! Wardah listened to all my preferences and nailed the look."</p>
+          <div class="client-info">
+            <div>
+              <h4>Fatima Z.</h4>
+              <p>Bride</p>
             </div>
           </div>
         </div>
@@ -594,18 +597,25 @@
   <section id="about" class="about" role="region" aria-labelledby="about-title">
     <div class="container">
       <div class="about-img">
-        <img src="aboutme1.jpg" alt="Wardah, Professional Makeup Artist" />
+        <img
+          src="aboutme1.jpg"
+          alt="Makeup artist Wardah"
+        />
       </div>
       <div>
-        <h2 id="about-title">About Wardah</h2>
+        <h2 id="about-title">About Me</h2>
         <p>
-          Wardah is a professional makeup artist with over 10 years of experience specializing in bridal,
-          glam, and special occasion makeup. She is passionate about enhancing natural beauty and
-          making every client feel confident and beautiful.
+          Hi, I'm Wardah! With over 10 years of experience in the beauty
+          industry, I specialize in creating flawless looks that enhance your
+          natural beauty.
         </p>
         <p>
-          Using high-quality products and techniques, Wardah ensures long-lasting makeup that looks
-          flawless in person and photos.
+          I use only high-quality products and stay updated with the latest
+          techniques to ensure you look your absolute best for any occasion.
+        </p>
+        <p>
+          When I'm not doing makeup, you can find me teaching makeup workshops
+          or trying out new beauty trends!
         </p>
       </div>
     </div>
@@ -614,23 +624,31 @@
   <!-- Contact -->
   <section id="contact" class="contact" role="region" aria-labelledby="contact-title">
     <div class="container">
-      <h2 id="contact-title">Get in Touch</h2>
-      <p>Book your appointment or ask any questions. I would love to hear from you!</p>
-      <p>
-        <strong>Email:</strong> <a href="mailto:wardah@example.com">wardah@example.com</a><br />
-        <strong>Phone:</strong> <a href="tel:+27817739708">+27 81 773 9708</a>
-      </p>
-      <div class="social-links" role="list">
-        <a href="https://www.facebook.com/makeupbywardah" target="_blank" aria-label="Facebook">
-          <i class="fab fa-facebook-f"></i>
-        </a>
-        <a href="https://www.instagram.com/makeupbywardah" target="_blank" aria-label="Instagram">
-          <i class="fab fa-instagram"></i>
-        </a>
-        <a href="https://wa.me/27817739708" target="_blank" aria-label="WhatsApp">
-          <i class="fab fa-whatsapp"></i>
-        </a>
+      <div class="section-title">
+        <h2 id="contact-title">Get In Touch</h2>
+        <p>Book your appointment or ask a question</p>
       </div>
+      <div class="social-links">
+        <a
+          href="https://www.instagram.com/makeupby_wardah"
+          target="_blank"
+          aria-label="Instagram"
+          rel="noopener noreferrer"
+          ><i class="fab fa-instagram"></i
+        ></a>
+        <a
+          href="https://wa.me/27817739708"
+          target="_blank"
+          aria-label="WhatsApp"
+          rel="noopener noreferrer"
+          ><i class="fab fa-whatsapp"></i
+        ></a>
+        <a href="mailto:wardah@example.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+      </div>
+      <p>
+        Or call:
+        <a href="tel:+27817739708" aria-label="Phone Number">081 773 9708</a>
+      </p>
     </div>
   </section>
 
@@ -638,40 +656,39 @@
   <footer>
     <div class="container">
       <div class="social-icons">
-        <a href="https://www.facebook.com/makeupbywardah" target="_blank" aria-label="Facebook">
-          <i class="fab fa-facebook-f"></i>
-        </a>
-        <a href="https://www.instagram.com/makeupbywardah" target="_blank" aria-label="Instagram">
-          <i class="fab fa-instagram"></i>
-        </a>
-        <a href="https://wa.me/27817739708" target="_blank" aria-label="WhatsApp">
-          <i class="fab fa-whatsapp"></i>
-        </a>
+        <a href="https://www.instagram.com/makeupby_wardah" target="_blank" rel="noopener noreferrer" aria-label="Instagram"
+          ><i class="fab fa-instagram"></i
+        ></a>
+        <a href="https://wa.me/27817739708" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"
+          ><i class="fab fa-whatsapp"></i
+        ></a>
+        <a href="mailto:wardah@example.com" aria-label="Email"
+          ><i class="fas fa-envelope"></i
+        ></a>
       </div>
-      <p>&copy; <span id="year"></span> Makeup by Wardah. All rights reserved.</p>
+      <p>&copy; <span id="currentYear"></span> Makeup by Wardah. All rights reserved.</p>
+	   <p style="font-size: 0.9rem; opacity: 0.7;">Designed & Developed by M.Y.K.</p>
     </div>
   </footer>
 
   <script>
-    // Mobile menu toggle
+    // Hamburger menu toggle
     const hamburger = document.getElementById('hamburger');
     const mobileMenu = document.getElementById('mobile-menu');
 
     hamburger.addEventListener('click', () => {
       mobileMenu.classList.toggle('active');
-      hamburger.classList.toggle('active');
     });
-
-    // Keyboard accessibility for hamburger
     hamburger.addEventListener('keydown', (e) => {
       if (e.key === 'Enter' || e.key === ' ') {
         e.preventDefault();
-        hamburger.click();
+        mobileMenu.classList.toggle('active');
       }
     });
 
-    // Insert current year in footer
-    document.getElementById('year').textContent = new Date().getFullYear();
+    // Dynamic year in footer
+    const yearSpan = document.getElementById('currentYear');
+    yearSpan.textContent = new Date().getFullYear();
   </script>
 </body>
 </html>
